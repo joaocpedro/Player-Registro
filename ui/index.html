@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />   
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/input.css" />
+    <title>Registro de Player</title>
+  </head>
+  <body>
+    <div class="action-menu-form" style="display: none;">
+      <div class="box-shadow">
+        <form>
+          <div class="control-form">
+            <div class="content-register-title">
+              <div class="title-description">
+                <h1>Registro</h1>
+                <h3>Crie sua identidade</h3>
+              </div>
+              <div class="icon-fingerprint">
+                <img src="icons/fingerprint.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="content-form">
+              <div class="input-form">
+                <label for="firstName">Nome</label>
+                <div class="box-input">
+                  <div class="box-icon" id="box-user">
+                    <img src="icons/user.svg" />
+                  </div>
+                  <input
+                    type="text"
+                    id="firstname"
+                    placeholder="Informe seu Nome"
+                  />
+                </div>
+              </div>
+              <div class="input-form">
+                <label for="lastName">Sobrenome</label>
+                <div class="box-input">
+                  <div class="box-icon">
+                    <img src="icons/lastname.svg" />
+                  </div>
+                  <input
+                    type="text"
+                    id="lastname"
+                    placeholder="Informe seu sobrenome"
+                  />
+                </div>
+              </div>
+              <div class="input-form">
+                <label for="age">Idade</label>
+                <div class="box-input">
+                  <div class="box-icon">
+                    <img src="icons/age.svg" />
+                  </div>  
+                  <input
+                    type="number"
+                    min="18"
+                    max="90"
+                    id="age"                   
+                    placeholder="Informe sua idade"
+                  />
+                </div>
+              </div>
+              <div class="input-form">
+                <label for="naturalidade">Naturalidade</label>
+                <div class="box-input">
+                  <div class="box-icon">
+                    <img src="icons/naturalidade.svg" />
+                  </div>
+                  <input
+                    type="text"
+                    id="nationality"
+                    placeholder="Informe sua naturalidade"
+                  />
+                </div>
+              </div>
+              <div class="input-form">
+                <div class="box-input">
+                  <button  type="button" id="next_step">
+                    <img src="icons/nextstep.svg" />
+                  </button>
+                  <p>Avançar</p>                  
+                </div>
+                <p id="error-firststep"></p>
+              </div>
+            </div>
+          </div>
+          <div class="control-form-two" style="display: none">
+            <div class="input-second-form">
+              <label for="lastName">Historia do Personagem</label>
+              <div class="box-input">
+                <div class="box-icon">
+                  <img src="icons/book.svg" />
+                </div>
+                <input type="text" id="biography" placeholder="Informe sua historia" />
+              </div>
+            </div>
+
+            <div class="input-second-form">
+              <div class="wrapper">
+                <input
+                  type="radio"
+                  name="gender"
+                  id="option-1"
+                  checked="checked"
+                  value="1"
+                />
+                <input type="radio" name="gender" id="option-2" value="0" />
+                <label for="option-1" class="option option-1">
+                  <div class="dot"></div>
+                  <span>Masculino</span>
+                </label>
+                <label for="option-2" class="option option-2">
+                  <div class="dot"></div>
+                  <span>Feminino</span>
+                </label>
+              </div>
+              <div class="area-finish">
+                <button class="finished-button" type="submit" id="create-character">
+                  Entrar na Cidade
+                </button>
+                <p id="error-secondstep"></p>               
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+*{ /* Reset */
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   user-select: none;
+} 
+ 
+body {  
+   font-family: 'League Spartan', sans-serif; 
+   color: white; 
+}
+ 
+
+.box-shadow { 
+   height: 100vh;
+   background: radial-gradient(97.04% 97.04% at 50% 2.96%, #353535 10.02%, rgba(32, 32, 32, 0.763657) 45.47%, #000000 100%);
+} 
+   
+.control-form { 
+   position: absolute; 
+   top: 10%;
+   left: 2%;
+}
+ 
+.area-form {  
+   display: flex;
+   flex-direction: column;
+}
+.content-register-title{  
+  display: flex;        
+}
+     
+.title-description  {  
+   text-transform: uppercase;   
+   top: 12%; 
+   left: 1.5%; 
+} 
+ 
+.title-description h1 { 
+   font-size: 2rem
+}
+.title-description h3 {   
+   margin-top: 5px;
+   font-weight: 200; 
+   letter-spacing: 0.3rem; 
+   font-size: 13px;         
+   color: rgba(255, 255, 255, 0.74);
+}  
+  
+.icon-fingerprint { 
+   margin-left: 5px;
+}
+.icon-fingerprint img {  
+   width: 45px;
+   height: 45px;
+} 
+ 
+
+form .input-form {    
+   margin-top: 7%;  
+   font-weight: 300;
+   color: rgba(255, 255, 255, 0.801);   
+} 
+    
+
+
+.box-input {        
+   margin-top: 2%; 
+   width: 380px; 
+   height: 65px;
+   background: linear-gradient(270.41deg, rgba(0, 0, 0, 0.17) 50.36%, rgba(0, 0, 0, 0) 201.13%);
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;     
+} 
+ 
+.box-icon {    
+   width: 35px;
+   height: 35px;
+   background: #3371EB;
+   box-shadow: 2px 0px 10px 5px rgba(16, 76, 230, 0.23); 
+   border-radius: 5px; 
+   margin-left: -3%; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}  
+ 
+.box-icon img {      
+   width: 23px;
+   height: 23px;  
+}
+ 
+form .input-form input, .control-form-two .box-input input{  
+   all: unset;   
+   margin-left: 3%; 
+   width: 90%;  
+   background-color: transparent;   
+} 
+ 
+
+ 
+form .input-form .box-input p {  
+   margin-left: 3%;
+   color: #fff; 
+  font-size: 1.1rem;
+}  
+   
+.box-input button { 
+
+   all: unset;
+   margin-left: -3%; 
+   border-radius: 5px; 
+   width: 35px;
+   height: 35px;
+   background: #FD730F;
+   box-shadow: 2px 0px 10px 5px rgba(255, 128, 56, 0.13);   
+} 
+ 
+.box-input button img {  
+   margin: auto;
+   display: block;
+   width: 23px;
+   height: 23px;
+}
+
+#error-firststep  { 
+   margin-top: 4%;    
+   text-align: center;  
+} 
+ 
+#error-firststep i {     
+   margin-right: 0.4%;
+}
+ 
+.control-form-two {  
+ position: absolute;
+ top: 50%;
+ left: 50%; 
+ /* transition: 2s ease-in-out; */
+ transform: translate(-50%,-50%); 
+ font-weight: 300;
+ color: rgba(255, 255, 255, 0.801);   
+} 
+ 
+.input-second-form { 
+   margin-bottom: 7%;
+} 
+ 
+
+.area-finish { 
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   flex-direction: column;
+}
+ 
+.finished-button {   
+   all: unset; 
+   padding: 6px;
+   margin-top: 7%; 
+   transition: 1s; 
+   /* background: linear-gradient(270.41deg, rgba(0, 0, 0, 0.17) 50.36%, rgba(0, 0, 0, 0) 201.13%);  */
+}  
+  
+#error-firststep, #error-secondstep { 
+   font-size: 0.9rem; 
+}
+#error-firststep i , #error-secondstep i { 
+   color: rgb(231, 69, 69);
+   font-size: 0.8rem; 
+} 
+ 
+.error { 
+   color: rgb(231, 69, 69);
+}
+.finished-button:hover {  
+   transition: 1s;
+   letter-spacing: 0.1rem;
+} 
+  
