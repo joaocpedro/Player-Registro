@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const warningSecondStep = document.querySelector("#error-secondstep");
 
   window.addEventListener("message", function (event) {
-    var item = event.data;
+    const item = event.data;
 
     if (item.showPlayerMenu == true) {
       document.querySelector(".action-menu-form").style.display = "block";
